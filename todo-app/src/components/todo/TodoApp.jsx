@@ -8,6 +8,7 @@ import TodoList from "./TodoList";
 import LoginComponent from "./LoginComponent";
 import LogoutComponent from "./LogoutComponent";
 import withParams from "./WithParams";
+import Welcome from "./Welcome";
 
 class TodoApp extends Component{
     render(){
@@ -40,17 +41,7 @@ class TodoApp extends Component{
 
 
 
-class Welcome extends Component{
-    render(){
-      return (
-        <div>
-            Welcome Page {this.props.params.name}<br/>
-            Goto todolist <Link to="/todolist">click here</Link>
-        </div>
-      )
-    }
-  }
-  
+
 function ErrorComponent(){
     return <>URL is not Valid</>
 }
